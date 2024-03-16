@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClimaVue</title>
+    <link rel="icon" type="image/png" href="/assets/photos/cloud.png" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <script src="scripts/index.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/095021eb86.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <div class="container">
+      <h1>ClimaVue</h1>
+      <div class="search-bar">
+        <input type="text" id="cities" placeholder="Enter city name" />
+        <button id="search-btn">Search</button>
+      </div>
+      <datalist id="cities-data"></datalist>
+      <div class="spinner-container hidden" id="spinner-container">
+        <div class="spinner"></div>
+      </div>
+      <div id="weather-info"></div>
+      <div id="forecast-container" class="forecast-container"></div>
+      <div id="favorites-container">
+        <h2>Favorite Cities</h2>
+        <ul id="favorites-list"></ul>
+      </div>
+    </div>
+  </body>
+</html>
